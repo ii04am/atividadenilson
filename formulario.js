@@ -20,14 +20,14 @@ document.getElementById('ordenar').addEventListener('click', () => {
     listaOrdenada.textContent = numerosOrdenados.join(', ');
 });
 
-// Método de ordenação por seleção
+
 function selectionSort(arr) {
     const n = arr.length;
     for (let i = 0; i < n - 1; i++) {
-        let minIndex = i; // Índice do menor elemento
+        let minIndex = i; 
         for (let j = i + 1; j < n; j++) {
             if (arr[j] < arr[minIndex]) {
-                minIndex = j; // Atualiza o índice do menor elemento
+                minIndex = j; 
             }
         }
         // Troca o menor elemento encontrado com o primeiro elemento
